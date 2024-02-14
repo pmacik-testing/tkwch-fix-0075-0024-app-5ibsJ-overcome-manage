@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-olxk
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0024-tenant/tkwch-fix-0075-0024-app/devfile-sample-olxk@sha256:9c2ef0597879a750b81e2bf2d0a305bcd16641cbc5b29cbcf29720d7a6433235
+        name: my-nodejs
+        resources: {}
+status: {}
